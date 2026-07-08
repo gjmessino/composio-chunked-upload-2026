@@ -1,0 +1,227 @@
+[
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_ADD_FILE_SHARING_PREFERENCE",
+    "param": "email_address",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_ADD_OR_REMOVE_TO_CUSTOMER_LIST",
+    "param": "emails",
+    "required": true,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_CREATE_EMAIL_DRAFT",
+    "param": "cc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_CREATE_EMAIL_DRAFT",
+    "param": "bcc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_CREATE_EMAIL_DRAFT",
+    "param": "recipient_email",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_CREATE_EMAIL_DRAFT",
+    "param": "extra_recipients",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_CREATE_PERMISSION",
+    "param": "email_address",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_FORWARD_MESSAGE",
+    "param": "cc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_FORWARD_MESSAGE",
+    "param": "bcc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_FORWARD_MESSAGE",
+    "param": "recipients",
+    "required": true,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_GET_PERMISSION_ID_FOR_EMAIL",
+    "param": "email",
+    "required": true,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_REMOVE_ATTENDEE",
+    "param": "attendee_email",
+    "required": true,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_REPLY_TO_THREAD",
+    "param": "cc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_REPLY_TO_THREAD",
+    "param": "bcc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_REPLY_TO_THREAD",
+    "param": "recipient_email",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_REPLY_TO_THREAD",
+    "param": "extra_recipients",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_SEND_EMAIL",
+    "param": "cc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_SEND_EMAIL",
+    "param": "bcc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_SEND_EMAIL",
+    "param": "from_email",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_SEND_EMAIL",
+    "param": "recipient_email",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_SEND_EMAIL",
+    "param": "extra_recipients",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_UPDATE_DRAFT",
+    "param": "cc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_UPDATE_DRAFT",
+    "param": "bcc",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_UPDATE_DRAFT",
+    "param": "recipient_email",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  },
+  {
+    "from": "GOOGLESUPER_GET_CONTACTS",
+    "to": "GOOGLESUPER_UPDATE_DRAFT",
+    "param": "extra_recipients",
+    "required": false,
+    "reason": "if the user supplies a contact's name rather than an email address, resolve it to an email via a contacts lookup first",
+    "confidence": "medium",
+    "source": "semantic_resolution"
+  }
+]
