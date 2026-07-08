@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "fetch-tools": "node src/fetch-tools.mjs",
+    "normalize-tools": "node src/normalize-sdk-tools.mjs",
+    "fetch-docs": "node src/fetch-docs.mjs",
+    "extract-tools": "node src/extract-tools.mjs",
+    "mine-edges": "node src/build-graph.mjs",
+    "curate-github": "node src/curate-github.mjs",
+    "curate-googlesuper": "node src/curate-googlesuper.mjs",
+    "build-graph": "node src/build-final-graph.mjs",
+    "build-html": "node src/build-html.mjs",
+    "build": "npm run fetch-tools && npm run normalize-tools && npm run mine-edges && npm run curate-github && npm run curate-googlesuper && npm run build-graph && npm run build-html",
+    "build-from-docs": "npm run fetch-docs && npm run extract-tools && npm run mine-edges && npm run curate-github && npm run curate-googlesuper && npm run build-graph && npm run build-html"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.87",
+    "@composio/core": "^0.13.1",
+    "dotenv": "^17.4.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "@types/bun": "^1.3.11"
+  }
+}
